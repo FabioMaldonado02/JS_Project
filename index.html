@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Stimulus Check Web</title>
+</head>
+<body>
+    <h1>Stimulus Check Calculator</h1>
+    <h2>Find Out Your Stimulus</h2>
+
+    <form>
+        <label>Choose Your Status:</label>
+        <select name = "status" placeholder ="the">
+            <option value = "single">Single</option>
+            <option value = "married">Married</option>
+            <option value = "hoh">Head Of Household</option>
+        </select>
+       
+        <label>Income:</label>
+        <input name = "income" type="number" placeholder = "ex 20,000" required>
+
+        <label>Dependents:</label>
+        <input name ="dependents" type="number" placeholder="ex 1" required>
+ 
+        <button>Calculator</button>
+    </form>
+    
+    <div id ="output"></div>
+    <script src ="uuid.js"></script>
+    <script src ="functions.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
